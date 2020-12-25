@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PortFolio{% endblock %}
+
+{% block header %}
+<header>
+    <div class="container my-5">
+
+    </div>
+</header>
+{% endblock %}
+
+{% block contents %}
+    <seciton>
+        <div class="masthead-content">
+            <div class="container mt-5">
+                <h1 class="">モトヨシの<br>ポートフォリオ</h1>
+                <p>Made of Django</p>
+            </div>
+        </div>
+    </seciton>
+    <section>
+        <div class="container my-3 my_mokuji">
+            <em class="mokuji">目次</em>
+            <ul>
+                <li><a href="#001">自己紹介</a></li>
+                <li><a href="#002">RPAツール</a></li>
+                    <ul>
+                        <li><a href="#003">為替計算機</a></li>
+                        <li><a href="#004">利益計算機</a></li>
+                        <li>Twitter自動化</li>
+                    </ul>
+                <li>スクレイピング</li>
+                    <ul>
+                        <li>ECサイト一括起動</li>
+                        <li>CS案件一括取得</li>
+                    </ul>
+                <li>機械学習</li>
+                    <ul>
+                        <li>決算情報の重回帰分析</li>
+                        <li>決算情報のロジスティック回帰分析</li>
+                    </ul>
+                <li>サイト制作</li>
+                    <ul>
+                        <li>浪漫屋</li>
+                        <li>Milano</li>
+                        <li>サーバー引越し.com</li>
+                    </ul>
+                <li>スキル</li>
+                <li>使用可能ツール</li>
+                <li>当サイトの仕様</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2 id="001">自己紹介</h2>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>名前</td>
+                  <td>モトヨシ ヒロアキ</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>長所</td>
+                  <td>勉強が好き・作業が丁寧</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>短所</td>
+                  <td>アウトプットが少ない</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>趣味</td>
+                  <td>読書</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>好きな本</td>
+                  <td>反応しない練習</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#">履歴書のPDFはこちら</a>
+            <h3 class="mt-4">アピールポイント</h3>
+            <p>ビジネスや勉強では、戦略（計画）が重要だと考えています。</p>
+            <ul>
+                <li>孫子の兵法</li>
+                <li>ランチェスター戦略</li>
+                <li>ピラミッドストラクチャー</li>
+                <li>ロジカルシンキング</li>
+            </ul>
+            <p>などなど戦略や計画に関する勉強には、比較的多めに時間とお金を投資しています。</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2 id="002">ツール</h2>
+                <p>福岡の友人が輸出業をしています。 Pythonのコーディング練習を
+                兼ねて、友人の輸出業務を効率化できるツールを作成しました。
+                </p>
+
+                <div class="h3_area">
+                    <h3 class="mt-4" id="003">為替計算機</h3>
+                        <p><a href="https://www.oanda.jp/" target="_blank">OANDA Japan株式会社</a>様から
+                            APIで4ヶ国の為替レートを取得して、一括で相関レートを計算します。</p>
+                        <em class="mt-4">ツールのポイント</em>
+                        <ul>
+                            <li>Tikinterを使用</li>
+                            <li>正確なレートで計算</li>
+                        </ul>
+                        <h4>ツールの動作</h4>
+                            <div class="movie-wrap mb-4">
+                                <iframe width="1280" height="720" src="https://www.youtube.com/embed/EElHrUCf2_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <h4>GitHubのURL</h4>
+                            <a href="https://github.com/motoyoshihiroaki/Currency_Calc" target="_blank">Currency_Calcのソースコード</a>
+                </div>
+                <hr>
+                <div class="h3_area">
+                    <h3 class="mt-4" id="004">利益計算機</h3>
+                       <p>輸出では様々なサービスを利用します。そのサービス毎に手数料が発生し計算が複雑になります。<br>
+                       このツールはリサーチをする際の計算の手間を省き、出品が決定した商品の情報をExcelに記録します。</p>
+                        <em class="mt-4">ツールのポイント</em>
+                        <ul>
+                            <li>TikinterでGUI化</li>
+                            <li>輸出国の地域毎の計算</li>
+                            <li>必要最低限の情報入力</li>
+                            <li>在庫管理も考慮</li>
+                        </ul>
+                        <h4>ツールの動作</h4>
+                            <div class="movie-wrap mb-4">
+                                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/kBkddYL1SFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <h4>ソースコード</h4>
+                            <P>GitHubを参照</P>
+                </div>
+                <hr>
+                <div class="h3_area">
+                    <h3 class="mt-4" id="004">Twitter自動化</h3>
+                    <p>ターゲット属性のユーザーのみを狙って「いいねとリツイート」を一定間隔でランダムに行います。</p>
+                    <p>どんな動きだと、フォローしてもらえるかな？と考えながら作成しました。このツールを使ってフォロワーが2000人を超えたときの達成感は本当に大きかったです。</p>
+                        <em class="mt-4">ツールのポイント</em>
+                        <ul>
+                            <li>人間らしい動き</li>
+                            <li>エラー発生はLINEに通知</li>
+                            <li>凍結されない工夫</li>
+                            <li>非アクティブユーザーの排除</li>
+                        </ul>
+                        <h4>ツールの動作</h4>
+                            <div class="movie-wrap mb-4">
+                                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/kBkddYL1SFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <h4>ソースコード</h4>
+                            <P>GitHubを参照</P>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2>スクレイピング</h2>
+                <div class="h3_area">
+                    <h3 class="mt-4" id="004">ECサイト一括起動</h3>
+                       <p>複数のECサイトで商品リサーチをする時間を短縮するために作成しました。<br>
+                       並列処理（非同期処理）の実装が難点でしたが、大幅な時間の短縮に成功しました。</p>
+                        <em class="mt-4">ツールのポイント</em>
+                        <ul>
+                            <li>商品名を一回入力するだけ</li>
+                            <li>「安い順」などの各条件で整列済み</li>
+                            <li>同期処理の10倍以上高速</li>
+                            <li>Chromeプロファイル情報の参照</li>
+                        </ul>
+                        <h4>ツールの動作</h4>
+                            <div class="movie-wrap mb-4">
+                                 <iframe width="854" height="480" src="https://www.youtube.com/embed/rdyYyTN44R4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        <h4>ソースコード</h4>
+                            <P>GitHubを参照</P>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2>機械学習</h2>
+                <div class="h3_area">
+                    <h3 class="mt-4" id="004">決算情報の重回帰分析</h3>
+                       <p>重回帰分析</p>
+                        <em class="mt-4">分析のポイント</em>
+                        <ul>
+                            <li>商品名を一回入力するだけ</li>
+                            <li>「安い順」などの各条件で整列済み</li>
+                            <li>同期処理の10倍以上高速</li>
+                            <li>Chromeプロファイル情報の参照</li>
+                        </ul>
+                        <h4>分析結果</h4>
+                            <p>表</p>
+                        <h4>ソースコード</h4>
+                            <P>GitHubを参照</P>
+                </div>
+                <hr>
+                <div class="h3_area">
+                    <h3 class="mt-4" id="004">決算情報のロジスティック回帰分析</h3>
+                       <p>ロジスティック回帰分析</p>
+                        <em class="mt-4">分析のポイント</em>
+                        <ul>
+                            <li>商品名を一回入力するだけ</li>
+                            <li>「安い順」などの各条件で整列済み</li>
+                            <li>同期処理の10倍以上高速</li>
+                            <li>Chromeプロファイル情報の参照</li>
+                        </ul>
+                        <h4>分析結果</h4>
+                            <p>表</p>
+                        <h4>ソースコード</h4>
+                            <P>GitHubを参照</P>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2>スキル</h2>
+                <div class="h3_area">
+                    <h3>コーディング可能</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                    </ul>
+                    <h3>既存コードの編集が可能</h3>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>MySQL</li>
+                        <li>PHP</li>
+                        <li>R</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container my-4">
+            <h2>使用可能ツール</h2>
+            <ul>
+                <li>Jupyter lab</li>
+                <li>Visual Studio Code</li>
+                <li>PyCharm</li>
+                <li>Virtual Box</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Premiere Pro</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="container my-4">
+            <h2>当サイトの仕様</h2>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>クラウド</td>
+                  <td>AWS EC2</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>データベース</td>
+                  <td>PostgreSQL</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>ソースコード</td>
+                  <td>GitHub</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </section>
+{% endblock %}
