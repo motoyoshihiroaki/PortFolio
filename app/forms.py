@@ -23,11 +23,11 @@ class InquiryForm(forms.Form):
         email = self.cleaned_data['email']
         message = self.cleaned_data['message']
 
-        subject = 'お問い合わせ {}'.format(title)
+        subject = 'お問い合わせ'
         message = '送信者名： {0}\nメールアドレス： {1}\nメッセージ：\n{2}'.format(name, email, message)
-        form_email = 'admin@example.com'
+        from_email = 'admin@example.com'
         to_list = ['test@example.com']
         cc_list = [email]
 
-        message = EmailMessage(subject=subject, body=message, form_email=form_email, to=to_list, cc=cc_list)
+        message = EmailMessage(subject=subject, body=message, from_email=from_email, to=to_list, cc=cc_list)
         message.send()
