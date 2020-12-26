@@ -87,3 +87,11 @@ a:visited {
      width: 100%;
      height: 100%;
 }
+
+/*お問い合わせ画面の設定*/
+.my-div-style {
+    margin-top: 6rem;
+}
+.inq-btn {
+    margin: auto;
+}
