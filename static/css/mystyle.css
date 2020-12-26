@@ -10,7 +10,8 @@ footer {
 }
 
 hr {
-    border-top: 1.5px #d3d3d3 solid;
+    border-top: 1.5px #dcdcdc solid;
+    width: 45%;
 }
 
 h2 {
@@ -40,6 +41,18 @@ h2:after {
 
 .my_mokuji > .mokuji {
   font-size: 1.5rem;
+}
+
+.point > ul, ol {
+  color: #1e366a;
+  border-top: solid #1e366a 1px;/*上のボーダー*/
+  border-bottom: solid #1e366a 1px;/*下のボーダー*/
+  padding: 0.5em 0 0.5em 1.5em;
+}
+
+.point > ul li, ol li {
+  line-height: 1.5;
+  padding: 0.2em 0;
 }
 
 a {

@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2 id="001">自己紹介</h2>
             <table class="table">
@@ -85,7 +85,13 @@
                 </tr>
               </tbody>
             </table>
-            <a href="#">履歴書のPDFはこちら</a>
+            <div class="point">
+                <ul>
+                    <li><a href="https://twitter.com/ses_web_create" target="_blank">Twitterアカウント</a></li>
+                    <li><a href="https://github.com/motoyoshihiroaki" target="_blank">GitHubアカウント</a></li>
+                    <li><a href="#">履歴書のPDF</a></li>
+                </ul>
+            </div>
             <h3 class="mt-4">アピールポイント（未編集）</h3>
             <p>ビジネスや勉強では、戦略（計画）が重要だと考えています。</p>
             <ul>
@@ -98,9 +104,9 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
-            <h2 id="002">ツール</h2>
+            <h2 id="002">RPAツール</h2>
                 <p>福岡の友人が輸出業をしています。 Pythonのコーディング練習を
                 兼ねて、友人の輸出業務を効率化できるツールを作成しました。
                 </p>
@@ -109,12 +115,16 @@
                     <h3 class="mt-4" id="003">為替計算機</h3>
                         <p><a href="https://www.oanda.jp/" target="_blank">OANDA Japan株式会社</a>様から
                             APIで4ヶ国の為替レートを取得して、一括で相関レートを計算します。</p>
-                        <em class="mt-4">ツールのポイント</em>
-                        <ul>
-                            <li>Tikinterを使用</li>
-                            <li>正確なレートで計算</li>
-                        </ul>
-                        <h4>ツールの動作</h4>
+                        <p>4つの数字を同時に かつ どの数字を説明変数にしても計算ができると
+                            いう条件はGoogle検索で探しても見つからず数時間かけて計算方法を考えました。</p>
+                        <em class="mt-4 font-weight-bold">ツールのポイント</em>
+                        <div class="point">
+                             <ul>
+                                <li>Tikinterを使用</li>
+                                <li>正確なレートで計算</li>
+                            </ul>
+                        </div>
+                        <h4 class="mt-4">ツールの動作</h4>
                             <div class="movie-wrap mb-4">
                                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/EElHrUCf2_g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -126,14 +136,16 @@
                     <h3 class="mt-4" id="004">利益計算機</h3>
                        <p>輸出では様々なサービスを利用します。そのサービス毎に手数料が発生し計算が複雑になります。<br>
                        このツールはリサーチをする際の計算の手間を省き、出品が決定した商品の情報をExcelに記録します。</p>
-                        <em class="mt-4">ツールのポイント</em>
-                        <ul>
-                            <li>TikinterでGUI化</li>
-                            <li>輸出国の地域毎の計算</li>
-                            <li>必要最低限の情報入力</li>
-                            <li>在庫管理も考慮</li>
-                        </ul>
-                        <h4>ツールの動作</h4>
+                        <em class="mt-4 font-weight-bold">ツールのポイント</em>
+                        <div class="point">
+                             <ul>
+                                <li>TikinterでGUI化</li>
+                                <li>輸出国の地域毎の計算</li>
+                                <li>必要最低限の情報入力</li>
+                                <li>在庫管理も考慮</li>
+                            </ul>
+                        </div>
+                        <h4 class="mt-4">ツールの動作</h4>
                             <div class="movie-wrap mb-4">
                                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/kBkddYL1SFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -145,27 +157,29 @@
                     <h3 class="mt-4" id="004">Twitter自動化</h3>
                     <p>ターゲット属性のユーザーのみを狙って「いいね、リツイート、フォロー」を一定間隔ランダムで行います。</p>
                     <p>どんな動きだと、フォローしてもらえるかな？と考えながら作成しました。このツールを使ってフォロワーが2000人を超えたときは達成感がありました。</p>
-                        <em class="mt-4">ツールのポイント</em>
+                        <em class="mt-4 font-weight-bold">ツールのポイント</em>
                         <ul>
                             <li>人間らしい動き</li>
                             <li>エラー発生はLINEに通知</li>
                             <li>凍結されない工夫</li>
                             <li>非アクティブユーザーの排除</li>
                         </ul>
-                        <h4>ツールの動作</h4>
+                        <h4 class="mt-4">ツールの動作</h4>
                             <div class="movie-wrap mb-4">
                                  <iframe width="1280" height="720" src="https://www.youtube.com/embed/kBkddYL1SFc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         <h4>GitHub</h4>
-                            いいねbotを基本にコーディングしているので、他の２つのコードはあまり変化していません。
-                            <a href="https://github.com/motoyoshihiroaki/Twiiter_Newfavo" target="_blank">いいねbot</a>
-                            <a href="https://github.com/motoyoshihiroaki/Twitter_Newretweet" target="_blank">リツイートbot</a>
-                            <a href="https://github.com/motoyoshihiroaki/Twitter_NewFollow" target="_blank">フォローbot</a>
+                            いいねbotを基本にコーディングしているので、他の３つのコードはあまり変化していません。
+                            <ul class="mt-2">
+                                <li><a href="https://github.com/motoyoshihiroaki/Twiiter_Newfavo" target="_blank">いいねbot</a></li>
+                                <li><a href="https://github.com/motoyoshihiroaki/Twiiter_Newfavo" target="_blank">リツイートbot</a></li>
+                                <li><a href="https://github.com/motoyoshihiroaki/Twiiter_Newfavo" target="_blank">フォローbot</a></li>
+                            </ul>
                 </div>
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2>スクレイピング</h2>
                 <div class="h3_area">
@@ -179,7 +193,7 @@
                             <li>同期処理の10倍以上高速</li>
                             <li>Chromeプロファイル情報の参照</li>
                         </ul>
-                        <h4>ツールの動作</h4>
+                        <h4 class="mt-4">ツールの動作</h4>
                             <div class="movie-wrap mb-4">
                                  <iframe width="854" height="480" src="https://www.youtube.com/embed/rdyYyTN44R4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
@@ -189,7 +203,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2>機械学習</h2>
                 <div class="h3_area">
@@ -226,7 +240,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2>スキル</h2>
                 <div class="h3_area">
@@ -247,7 +261,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2>使用可能ツール</h2>
             <ul>
@@ -261,7 +275,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section class="mt-4">
         <div class="container my-4">
             <h2>当サイトの仕様</h2>
             <table class="table">
