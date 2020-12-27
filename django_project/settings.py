@@ -16,9 +16,8 @@ AWS_SES_SECRET_ACCESS_KEY = os.environ.get('AWS_SES_SECRET_ACCESS_KEY')
 EMAIL_BACKEND = 'django_ses.SESBackend'
 
 # ロギングの追加設定
-
 LOGGING = {
-    'version': 1, # 1固定
+    'version': 1,
     'disable_existing_loggers': False,
 
     # ロガーの設定
